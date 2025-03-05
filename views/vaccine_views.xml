@@ -1,0 +1,18 @@
+<odoo>
+  <data>
+    <!-- Vista en árbol para mostrar el historial de vacunas -->
+    <record model="ir.ui.view" id="vaccine_tree">
+      <field name="name">Vacunas</field>
+      <field name="model">petguardian.vaccine</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="patient_id"/>
+          <field name="vaccine_name"/>
+          <field name="date_administered"/>
+          <field name="next_dose"/>
+          <field name="office_id"/>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

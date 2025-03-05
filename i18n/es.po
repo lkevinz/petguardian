@@ -1,0 +1,428 @@
+# Translation of Odoo Server.
+# This file contains the translation of the module: petguardian.
+# Autores: Jonatan Casa y Kevin Salinas
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-04 20:44+0000\n"
+"PO-Revision-Date: 2025-03-04 20:44+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: petguardian
+#: model_terms:ir.ui.view,arch_db:petguardian.list_appointments
+msgid ""
+"<br/>\n"
+"                                            <strong>Estado:</strong>"
+msgstr "<br/>\n                                            <strong>Estado:</strong>"
+
+#. module: petguardian
+#: model_terms:ir.ui.view,arch_db:petguardian.list_appointments
+msgid "<span class=\"badge bg-warning\">Pendiente</span>"
+msgstr "<span class=\"badge bg-warning\">Pendiente</span>"
+
+#. module: petguardian
+#: model_terms:ir.ui.view,arch_db:petguardian.list_appointments
+msgid "<strong>Fecha:</strong>"
+msgstr "<strong>Fecha:</strong>"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_needaction
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_needaction
+msgid "Action Needed"
+msgstr "Acción requerida"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_attachment_count
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_attachment_count
+msgid "Attachment Count"
+msgstr "Número de adjuntos"
+
+#. module: petguardian
+#: model:ir.model.fields.selection,name:petguardian.selection__petguardian_appointment__state__canceled
+#: model_terms:ir.ui.view,arch_db:petguardian.list_appointments
+msgid "Cancelada"
+msgstr "Cancelada"
+
+#. module: petguardian
+#: model_terms:ir.ui.view,arch_db:petguardian.appointment_form
+msgid "Cita"
+msgstr "Cita"
+
+#. module: petguardian
+#: model:ir.actions.act_window,name:petguardian.action_petguardian_appointments
+#: model:ir.ui.menu,name:petguardian.menu_petguardian_appointments
+#: model_terms:ir.ui.view,arch_db:petguardian.appointment_calendar
+#: model_terms:ir.ui.view,arch_db:petguardian.veterinarian_form
+msgid "Citas"
+msgstr "Citas"
+
+#. module: petguardian
+#: model_terms:ir.ui.view,arch_db:petguardian.list_appointments
+msgid "Citas Programadas"
+msgstr "Citas Programadas"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__PetAppointment_ids
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__appointment_ids
+msgid "Citas asociadas"
+msgstr "Citas asociadas"
+
+#. module: petguardian
+#: model:ir.model.fields.selection,name:petguardian.selection__petguardian_appointment__state__completed
+#: model_terms:ir.ui.view,arch_db:petguardian.list_appointments
+msgid "Completada"
+msgstr "Completada"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__office_id
+msgid "Consultorio"
+msgstr "Consultorio"
+
+#. module: petguardian
+#: model:ir.actions.act_window,name:petguardian.action_petguardian_offices
+#: model:ir.ui.menu,name:petguardian.menu_petguardian_offices
+msgid "Consultorios"
+msgstr "Consultorios"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__email
+msgid "Correo"
+msgstr "Correo"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__create_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__create_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__create_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__create_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__create_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__create_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__create_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__create_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: petguardian
+#: model_terms:ir.ui.view,arch_db:petguardian.appointment_form
+msgid "Detalles de la Cita"
+msgstr "Detalles de la Cita"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__display_name
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__display_name
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__display_name
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__display_name
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: petguardian
+#: model:ir.model,name:petguardian.model_petguardian_veterinarian
+msgid "Encargado de programar las citas"
+msgstr "Encargado de programar las citas"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__speciality
+msgid "Especialidad"
+msgstr "Especialidad"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__state
+msgid "Estado"
+msgstr "Estado"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__date_administered
+msgid "Fecha de Aplicación"
+msgstr "Fecha de Aplicación"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__birth_date
+msgid "Fecha de Nacimiento"
+msgstr "Fecha de Nacimiento"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__date
+msgid "Fecha de la Cita"
+msgstr "Fecha de la Cita"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_follower_ids
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_partner_ids
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Contactos)"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__photo
+msgid "Foto de la Mascota"
+msgstr "Foto de la Mascota"
+
+#. module: petguardian
+#: model_terms:ir.actions.act_window,help:petguardian.action_petguardian_appointments
+msgid "Gestiona las citas veterinarias."
+msgstr "Gestiona las citas veterinarias."
+
+#. module: petguardian
+#: model_terms:ir.actions.act_window,help:petguardian.action_petguardian_vaccines
+msgid "Gestiona las vacunas."
+msgstr "Gestiona las vacunas."
+
+#. module: petguardian
+#: model_terms:ir.actions.act_window,help:petguardian.action_petguardian_veterinarians
+msgid "Gestiona los Veterinarios."
+msgstr "Gestiona los Veterinarios."
+
+#. module: petguardian
+#: model_terms:ir.actions.act_window,help:petguardian.action_petguardian_offices
+msgid "Gestiona los consultorios."
+msgstr "Gestiona los consultorios."
+
+#. module: petguardian
+#: model_terms:ir.actions.act_window,help:petguardian.action_petguardian_patients
+msgid "Gestiona los pacientes."
+msgstr "Gestiona los pacientes."
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__has_message
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__has_message
+msgid "Has Message"
+msgstr "Tiene mensaje"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__medical_history
+msgid "Historial Médico"
+msgstr "Historial Médico"
+
+#. module: petguardian
+#: model:ir.model,name:petguardian.model_petguardian_vaccine
+msgid "Historial de Vacunas"
+msgstr "Historial de Vacunas"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__id
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__id
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__id
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__id
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__id
+msgid "ID"
+msgstr "ID"
+
+#. module: petguardian
+#: model:ir.model.fields,help:petguardian.field_petguardian_appointment__message_needaction
+#: model:ir.model.fields,help:petguardian.field_petguardian_patient__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Si se marca, los nuevos mensajes requieren atención."
+
+#. module: petguardian
+#: model:ir.model.fields,help:petguardian.field_petguardian_appointment__message_has_error
+#: model:ir.model.fields,help:petguardian.field_petguardian_patient__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si se marca, algunos mensajes tienen un error de entrega."
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_is_follower
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__write_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__write_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__write_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__write_uid
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__write_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__write_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__write_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__write_date
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__pet_id
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__patient_id
+msgid "Mascota"
+msgstr "Mascota"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_has_error
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_has_error
+msgid "Message Delivery error"
+msgstr "Error de entrega del mensaje"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_ids
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: petguardian
+#: model:ir.model,name:petguardian.model_petguardian_appointment
+msgid "Modelo para gestionar citas veterinarias"
+msgstr "Modelo para gestionar citas veterinarias"
+
+#. module: petguardian
+#: model:ir.model,name:petguardian.model_petguardian_patient
+msgid "Modelo para gestionar pacientes"
+msgstr "Modelo para gestionar pacientes"
+
+#. module: petguardian
+#: model:ir.model,name:petguardian.model_petguardian_office
+msgid "Modelo para las zonas de atencion, consultorios"
+msgstr "Modelo para las zonas de atención, consultorios"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__name
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__name
+msgid "Nombre"
+msgstr "Nombre"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__name
+msgid "Nombre Consulta"
+msgstr "Nombre Consulta"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__vaccine_name
+msgid "Nombre Vacuna"
+msgstr "Nombre Vacuna"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__notes
+msgid "Notas"
+msgstr "Notas"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_needaction_counter
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__message_has_error_counter
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: petguardian
+#: model:ir.model.fields,help:petguardian.field_petguardian_appointment__message_needaction_counter
+#: model:ir.model.fields,help:petguardian.field_petguardian_patient__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Número de mensajes que requieren acción"
+
+#. module: petguardian
+#: model:ir.model.fields,help:petguardian.field_petguardian_appointment__message_has_error_counter
+#: model:ir.model.fields,help:petguardian.field_petguardian_patient__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_veterinarian__phone
+msgid "Número de teléfono"
+msgstr "Número de teléfono"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__okey
+msgid "Okey"
+msgstr "Aprobado"
+
+#. module: petguardian
+#: model:ir.actions.act_window,name:petguardian.action_petguardian_patients
+#: model:ir.ui.menu,name:petguardian.menu_petguardian_patients
+msgid "Pacientes"
+msgstr "Pacientes"
+
+#. module: petguardian
+#: model:ir.ui.menu,name:petguardian.menu_petguardian_root
+msgid "PetGuardian"
+msgstr "PetGuardian"
+
+#. module: petguardian
+#: model:ir.model.fields.selection,name:petguardian.selection__petguardian_office__location__1
+msgid "Planta 1"
+msgstr "Planta 1"
+
+#. module: petguardian
+#: model:ir.model.fields.selection,name:petguardian.selection__petguardian_office__location__2
+msgid "Planta 2"
+msgstr "Planta 2"
+
+#. module: petguardian
+#: model:ir.model.fields.selection,name:petguardian.selection__petguardian_office__location__3
+msgid "Planta baja"
+msgstr "Planta baja"
+
+#. module: petguardian
+#: model:ir.model.fields.selection,name:petguardian.selection__petguardian_appointment__state__scheduled
+msgid "Programada"
+msgstr "Programada"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_vaccine__next_dose
+msgid "Programar Próxima Dosis"
+msgstr "Programar Próxima Dosis"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__owner_name
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__owner_name
+msgid "Propietario"
+msgstr "Propietario"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__rating_ids
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__rating_ids
+msgid "Ratings"
+msgstr "Calificaciones"
+
+#. module: petguardian
+#: model:ir.actions.act_window,name:petguardian.action_petguardian_vaccines
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_patient__vaccine_ids
+#: model:ir.ui.menu,name:petguardian.menu_petguardian_vaccines
+msgid "Vacunas"
+msgstr "Vacunas"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__veterinarian_id
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__veterinarian_id
+#: model_terms:ir.ui.view,arch_db:petguardian.veterinarian_form
+msgid "Veterinario"
+msgstr "Veterinario"
+
+#. module: petguardian
+#: model:ir.actions.act_window,name:petguardian.action_petguardian_veterinarians
+#: model:ir.ui.menu,name:petguardian.menu_petguardian_veterinarians
+msgid "Veterinarios"
+msgstr "Veterinarios"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_appointment__office_id
+msgid "Zona"
+msgstr "Zona"
+
+#. module: petguardian
+#: model:ir.model.fields,field_description:petguardian.field_petguardian_office__location
+msgid "Zona de ubicacion"
+msgstr "Zona de ubicacion"

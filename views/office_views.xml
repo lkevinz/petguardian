@@ -1,0 +1,17 @@
+<odoo>
+  <data>
+    <!-- Vista en árbol para mostrar los consultorios -->
+    <record model="ir.ui.view" id="office_tree">
+      <field name="name">Consultorios</field>
+      <field name="model">petguardian.office</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="veterinarian_id"/>
+          <field name="location"/>
+          <field name="PetAppointment_ids"/>
+        </tree>
+      </field>
+    </record>
+  </data>
+</odoo>

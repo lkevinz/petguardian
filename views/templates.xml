@@ -1,0 +1,37 @@
+<odoo>
+    <data>
+        <!-- Plantilla web para listar las citas en formato de tarjetas -->
+        <template id="list_appointments" name="Listado de Citas Mejorado">
+            <t t-call="website.layout">
+                <div class="container mt-4">
+                    <h1 class="mb-4">Citas Programadas</h1>
+                    <div class="row">
+                        <t t-foreach="appointments" t-as="appointment">
+                            <div class="col-md-4 mb-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                          <t t-esc="appointment.pet_id.name"/>
+                                        </h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">
+                                          <t t-esc="appointment.owner_name"/>
+                                        </h6>
+                                        <p class="card-text">
+                                            <strong>Fecha:</strong> <t t-esc="appointment.date"/><br/>
+                                            <strong>Estado:</strong>
+                                            <t t-if="appointment.state == 'completed'">Completada</t>
+                                            <t t-elif="appointment.state == 'canceled'">Cancelada</t>
+                                            <t t-else="">
+                                              <span class="badge bg-warning">Pendiente</span>
+                                            </t>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </div>
+                </div>
+            </t>
+        </template>
+    </data>
+</odoo>

@@ -1,0 +1,10 @@
+<odoo>
+    <data>
+        <!-- Registro de demostración para un paciente (mascota) -->
+        <record id="pet_1" model="petguardian.patient">
+            <field name="name">Max</field>
+            <field name="owner_name">Carlos Gómez</field>
+            <field name="birth_date">2020-05-10</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,67 @@
+<odoo>
+  <data>
+    <!-- Vista de calendario para Citas -->
+    <record model="ir.ui.view" id="appointment_calendar">
+      <field name="name">Calendario de Citas</field>
+      <field name="model">petguardian.appointment</field>
+      <field name="arch" type="xml">
+        <calendar string="Citas" date_start="date" color="state">
+          <field name="pet_id"/>
+          <field name="owner_name"/>
+        </calendar>
+      </field>
+    </record>
+
+    <!-- Vista de árbol para Citas -->
+    <record model="ir.ui.view" id="appointment_tree">
+      <field name="name">Lista de Citas</field>
+      <field name="model">petguardian.appointment</field>
+      <field name="arch" type="xml">
+        <!-- decoration-success para resaltar las citas con okey=True -->
+        <tree decoration-success="okey==True" editable="top">
+          <field name="date"/>
+          <field name="pet_id"/>
+          <field name="owner_name"/>
+          <field name="office_id"/>
+          <field name="veterinarian_id"/>
+          <field name="state"/>
+          <field name="okey"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Vista de formulario para Citas-->
+    <record model="ir.ui.view" id="appointment_form">
+      <field name="name">Formulario de Citas</field>
+      <field name="model">petguardian.appointment</field>
+      <field name="arch" type="xml">
+        <form string="Cita">
+          <sheet>
+            <!-- Sección con fondo resaltado y padding para destacar la información -->
+            <div class="o_form_sheet_bg p-3">
+              <h3 class="mb-3">Detalles de la Cita</h3>
+              <group>
+                <field name="date" widget="datetime"/>
+                <field name="pet_id"/>
+              </group>
+              <group>
+                <field name="owner_name" readonly="1"/>
+                <field name="office_id"/>
+              </group>
+              <group>
+                <field name="veterinarian_id"/>
+                <field name="state"/>
+              </group>
+              <group>
+                <field name="okey"/>
+              </group>
+              <group>
+                <field name="notes"/>
+              </group>
+            </div>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>

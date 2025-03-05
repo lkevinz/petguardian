@@ -1,0 +1,102 @@
+<odoo>
+  <data>
+    <!-- Menú principal para PetGuardian -->
+    <record id="menu_petguardian_root" model="ir.ui.menu">
+      <field name="name">PetGuardian</field>
+      <field name="sequence">10</field>
+    </record>
+
+    <!-- Acción para la vista de Citas -->
+    <record model="ir.actions.act_window" id="action_petguardian_appointments">
+      <field name="name">Citas</field>
+      <field name="res_model">petguardian.appointment</field>
+      <field name="view_mode">tree,form,calendar</field>
+      <field name="help" type="html">
+        <p>Gestiona las citas veterinarias.</p>
+      </field>
+    </record>
+
+    <!-- Submenú para Citas -->
+    <record id="menu_petguardian_appointments" model="ir.ui.menu">
+      <field name="name">Citas</field>
+      <field name="parent_id" ref="menu_petguardian_root"/>
+      <field name="action" ref="action_petguardian_appointments"/>
+      <field name="sequence">10</field>
+    </record>
+
+    <!-- Acción para la vista de Pacientes -->
+    <record model="ir.actions.act_window" id="action_petguardian_patients">
+      <field name="name">Pacientes</field>
+      <field name="res_model">petguardian.patient</field>
+      <field name="view_mode">kanban,form</field>
+      <field name="view_id" ref="patient_kanban"/>
+      <field name="help" type="html">
+        <p>Gestiona los pacientes.</p>
+      </field>
+    </record>
+
+    <!-- Acción para la vista de Vacunas -->
+    <record model="ir.actions.act_window" id="action_petguardian_vaccines">
+      <field name="name">Vacunas</field>
+      <field name="res_model">petguardian.vaccine</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="vaccine_tree"/>
+      <field name="help" type="html">
+        <p>Gestiona las vacunas.</p>
+      </field>
+    </record>
+
+    <!-- Acción para la vista de Consultorios -->
+    <record model="ir.actions.act_window" id="action_petguardian_offices">
+      <field name="name">Consultorios</field>
+      <field name="res_model">petguardian.office</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_id" ref="office_tree"/>
+      <field name="help" type="html">
+        <p>Gestiona los consultorios.</p>
+      </field>
+    </record>
+
+    <!-- Acción para la vista de Veterinarios -->
+    <record model="ir.actions.act_window" id="action_petguardian_veterinarians">
+      <field name="name">Veterinarios</field>
+      <field name="res_model">petguardian.veterinarian</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p>Gestiona los Veterinarios.</p>
+      </field>
+    </record>
+
+    <!-- Submenú para Pacientes -->
+    <record id="menu_petguardian_patients" model="ir.ui.menu">
+      <field name="name">Pacientes</field>
+      <field name="parent_id" ref="menu_petguardian_root"/>
+      <field name="action" ref="action_petguardian_patients"/>
+      <field name="sequence">20</field>
+    </record>
+
+    <!-- Submenú para Vacunas -->
+    <record id="menu_petguardian_vaccines" model="ir.ui.menu">
+      <field name="name">Vacunas</field>
+      <field name="parent_id" ref="menu_petguardian_root"/>
+      <field name="action" ref="action_petguardian_vaccines"/>
+      <field name="sequence">30</field>
+    </record>
+
+    <!-- Submenú para Consultorios -->
+    <record id="menu_petguardian_offices" model="ir.ui.menu">
+      <field name="name">Consultorios</field>
+      <field name="parent_id" ref="menu_petguardian_root"/>
+      <field name="action" ref="action_petguardian_offices"/>
+      <field name="sequence">40</field>
+    </record>
+
+    <!-- Submenú para Veterinarios -->
+    <record id="menu_petguardian_veterinarians" model="ir.ui.menu">
+      <field name="name">Veterinarios</field>
+      <field name="parent_id" ref="menu_petguardian_root"/>
+      <field name="action" ref="action_petguardian_veterinarians"/>
+      <field name="sequence">50</field>
+    </record>
+  </data>
+</odoo>

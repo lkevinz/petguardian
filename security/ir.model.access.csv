@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_petguardian_patient,access_petguardian_patient,model_petguardian_patient,,1,1,1,1
+access_petguardian_appointment,access_petguardian_appointment,model_petguardian_appointment,,1,1,1,1
+access_petguardian_vaccine,access_petguardian_vaccine,model_petguardian_vaccine,,1,1,1,1
+access_petguardian_office,access_petguardian_office,model_petguardian_office,,1,1,1,1
+access_petguardian_veterinarian,access_petguardian_veterinarian,model_petguardian_veterinarian,,1,1,1,1

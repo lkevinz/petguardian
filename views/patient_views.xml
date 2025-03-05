@@ -1,0 +1,33 @@
+<odoo>
+  <data>
+    <!-- Vista Kanban para el modelo de pacientes -->
+    <record model="ir.ui.view" id="patient_kanban">
+      <field name="name">Pacientes Kanban</field>
+      <field name="model">petguardian.patient</field>
+      <field name="arch" type="xml">
+        <kanban class="o_kanban_mobile">
+          <field name="name"/>
+          <field name="owner_name"/>
+          <field name="photo"/>
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_card card border-primary">
+                <div class="card-body text-center">
+                  <img t-att-src="kanban_image('petguardian.patient', 'photo', record.id.raw_value)"
+                       class="img-thumbnail rounded-circle mb-2"
+                       style="width:100px;height:100px;object-fit:cover;"/>
+                  <h5 class="card-title">
+                    <t t-esc="record.name.value"/>
+                  </h5>
+                  <p class="card-text">
+                    <t t-esc="record.owner_name.value"/>
+                  </p>
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+  </data>
+</odoo>

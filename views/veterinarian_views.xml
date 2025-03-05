@@ -1,0 +1,52 @@
+<odoo>
+  <data>
+    <!-- Vista en árbol para mostrar los veterinarios -->
+    <record model="ir.ui.view" id="veterinarian_tree">
+      <field name="name">Veterinarios</field>
+      <field name="model">petguardian.veterinarian</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="email"/>
+          <field name="phone"/>
+          <field name="speciality"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Vista de formulario para Veterinarios-->
+    <record model="ir.ui.view" id="veterinarian_form">
+      <field name="name">Veterinarios Formulario</field>
+      <field name="model">petguardian.veterinarian</field>
+      <field name="arch" type="xml">
+        <form string="Veterinario">
+          <sheet>
+            <div class="card">
+              <div class="card-body">
+                <group>
+                  <field name="name"/>
+                  <field name="email"/>
+                </group>
+                <group>
+                  <field name="phone"/>
+                  <field name="speciality"/>
+                </group>
+                <notebook>
+                  <page string="Citas">
+                    <field name="appointment_ids">
+                      <tree>
+                        <field name="date" widget="datetime"/>
+                        <field name="pet_id"/>
+                        <field name="state"/>
+                      </tree>
+                    </field>
+                  </page>
+                </notebook>
+              </div>
+            </div>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>

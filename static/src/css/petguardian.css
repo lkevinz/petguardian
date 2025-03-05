@@ -1,0 +1,14 @@
+/* Archivo CSS para mejorar la apariencia de las vistas en PetGuardian */
+/* Autores: Jonatan Casa y Kevin Salinas */
+
+/* Estilo para las tarjetas con sombra y animación al pasar el mouse */
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    border: none;
+    border-radius: 8px;
+}
+.card:hover {
+    transform: scale(1.02);
+}
+
