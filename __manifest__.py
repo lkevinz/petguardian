@@ -21,6 +21,7 @@
         'views/veterinarian_views.xml',     # Vistas de Veterinarios
         'views/petguardian_menus.xml',      # Menús del módulo
         'views/templates.xml',              # Plantilla web para listar Citas
+        'views/followup_views.xml',         #Seguimiento Postoperatorio
     ],
     'demo': [
         'data/demo.xml',                  # Datos de demostración

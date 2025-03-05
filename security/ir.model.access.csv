@@ -4,3 +4,5 @@ access_petguardian_appointment,access_petguardian_appointment,model_petguardian_
 access_petguardian_vaccine,access_petguardian_vaccine,model_petguardian_vaccine,,1,1,1,1
 access_petguardian_office,access_petguardian_office,model_petguardian_office,,1,1,1,1
 access_petguardian_veterinarian,access_petguardian_veterinarian,model_petguardian_veterinarian,,1,1,1,1
+access_petguardian_followup,access_petguardian_followup,model_petguardian_followup,,1,1,1,1
+

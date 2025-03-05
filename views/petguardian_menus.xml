@@ -46,6 +46,16 @@
       </field>
     </record>
 
+    <!-- Acción para la vista de Seguimientos Postoperatorios -->
+    <record model="ir.actions.act_window" id="action_petguardian_followups">
+      <field name="name">Seguimientos</field>
+      <field name="res_model">petguardian.followup</field>
+      <field name="view_mode">tree,form</field>
+      <field name="help" type="html">
+        <p>Gestiona los seguimientos postoperatorios.</p>
+      </field>
+    </record>
+
     <!-- Acción para la vista de Consultorios -->
     <record model="ir.actions.act_window" id="action_petguardian_offices">
       <field name="name">Consultorios</field>
@@ -97,6 +107,14 @@
       <field name="parent_id" ref="menu_petguardian_root"/>
       <field name="action" ref="action_petguardian_veterinarians"/>
       <field name="sequence">50</field>
+    </record>
+
+    <!-- Nuevo submenú para Seguimientos Postoperatorios -->
+    <record id="menu_petguardian_followups" model="ir.ui.menu">
+      <field name="name">Seguimientos</field>
+      <field name="parent_id" ref="menu_petguardian_root"/>
+      <field name="action" ref="action_petguardian_followups"/>
+      <field name="sequence">60</field>
     </record>
   </data>
 </odoo>

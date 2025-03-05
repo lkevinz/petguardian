@@ -43,6 +43,38 @@ class PetPatient(models.Model):
         'patient_id', 
         string="Vacunas"
     )
+    followup_ids = fields.One2many(
+        'petguardian.followup',
+        'patient_id',
+        string="Seguimientos"
+    )
+
+class PetFollowup(models.Model):
+    _name = 'petguardian.followup'
+    _description = 'Seguimiento postoperatorio'
+
+    followup_date = fields.Date(
+        string="Fecha del Seguimiento", 
+        required=True
+    )
+    patient_id = fields.Many2one(
+        'petguardian.patient', 
+        string="Paciente", 
+        required=True
+    )
+    # Opcional: vincular seguimiento a una cita
+    appointment_id = fields.Many2one(
+        'petguardian.appointment',
+        string="Cita Asociada"
+    )
+    notes = fields.Text(
+        string="Observaciones"
+    )
+    state = fields.Selection(
+        string="Estado",
+        selection=[('pending', 'Pendiente'), ('completed', 'Completado'), ('canceled', 'Cancelado')],
+        default='pending'
+    )
 
 class PetAppointment(models.Model):
     _name = 'petguardian.appointment'

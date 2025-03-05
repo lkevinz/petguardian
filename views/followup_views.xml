@@ -1,0 +1,38 @@
+<odoo>
+  <data>
+    <!-- Vista de árbol para Seguimientos Postoperatorios -->
+    <record model="ir.ui.view" id="followup_tree">
+      <field name="name">Seguimientos Postoperatorios - Árbol</field>
+      <field name="model">petguardian.followup</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="followup_date"/>
+          <field name="patient_id"/>
+          <field name="appointment_id"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Vista de formulario para Seguimientos Postoperatorios -->
+    <record model="ir.ui.view" id="followup_form">
+      <field name="name">Seguimientos Postoperatorios - Formulario</field>
+      <field name="model">petguardian.followup</field>
+      <field name="arch" type="xml">
+        <form string="Seguimiento Postoperatorio">
+          <sheet>
+            <group>
+              <field name="followup_date"/>
+              <field name="patient_id"/>
+              <field name="appointment_id"/>
+            </group>
+            <group>
+              <field name="state"/>
+              <field name="notes"/>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+  </data>
+</odoo>
