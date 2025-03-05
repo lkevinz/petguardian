@@ -8,7 +8,7 @@
         Proyecto final de SGE para 2DAM.
     """,
     'author': "Jonatan Casa y Kevin Salinas",
-    'website': "https://github.com/lkevinz/petguardian-sge",
+    'website': "https://github.com/lkevinz/petguardian",
     'category': 'Tools',
     'version': '1.0',
     'depends': ['base', 'mail', 'calendar'],

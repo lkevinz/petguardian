@@ -2,7 +2,7 @@
 
 **PetGuardian** es un módulo de Odoo diseñado para la gestión integral de citas veterinarias, historial médico, vacunas y seguimiento postoperatorio para mascotas.  
 Este proyecto final, desarrollado para el curso de **SGE para 2DAM**, ha sido realizado por **Jonatan Casa** y **Kevin Salinas**.  
-Repositorio: [https://github.com/lkevinz/petguardian-sge](https://github.com/lkevinz/petguardian-sge)
+Repositorio: [https://github.com/lkevinz/petguardian](https://github.com/lkevinz/petguardian)
 
 ---
 
@@ -82,7 +82,7 @@ Se han realizado las siguientes mejoras y funcionalidades:
 ## Instalación
 
 1. **Descarga y Colocación:**  
-   - Clona o descarga el repositorio desde [https://github.com/lkevinz/petguardian-sge](https://github.com/lkevinz/petguardian-sge) y copia la carpeta `petguardian` en el directorio de addons de tu instancia Odoo.
+   - Clona o descarga el repositorio desde [https://github.com/lkevinz/petguardian](https://github.com/lkevinz/petguardian) y copia la carpeta `petguardian` en el directorio de addons de tu instancia Odoo.
 
 2. **Actualizar la Lista de Módulos:**  
    - Desde la interfaz de Odoo, actualiza la lista de módulos.
@@ -155,7 +155,7 @@ Cada directorio y archivo tiene una función específica, facilitando la manteni
 
 - **Autores:** Jonatan Casa y Kevin Salinas  
 - **Proyecto Final:** SGE para 2DAM  
-- **Repositorio:** [https://github.com/lkevinz/petguardian-sge](https://github.com/lkevinz/petguardian-sge)
+- **Repositorio:** [https://github.com/lkevinz/petguardian](https://github.com/lkevinz/petguardian)
 
 Si tienes dudas, sugerencias o necesitas soporte, por favor visita el repositorio en GitHub o contáctanos mediante los canales indicados en el mismo.
 
