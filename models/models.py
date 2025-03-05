@@ -62,7 +62,6 @@ class PetFollowup(models.Model):
         string="Paciente", 
         required=True
     )
-    # Opcional: vincular seguimiento a una cita
     appointment_id = fields.Many2one(
         'petguardian.appointment',
         string="Cita Asociada"
