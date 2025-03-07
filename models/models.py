@@ -9,6 +9,7 @@ Modelos:
 - petguardian.vaccine: Registro del historial de vacunas.
 - petguardian.office: Gestión de consultorios o zonas de atención.
 - petguardian.veterinarian: Gestión de veterinarios y sus citas.
+- petguardian.followup: Gestión de seguimientos postoperatoriosde pacientes (mascotas).
 """
 
 from odoo import models, fields, api

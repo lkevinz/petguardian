@@ -44,6 +44,8 @@ Este módulo se integra en Odoo 17 y aprovecha funcionalidades de los módulos b
   - Gestión de zonas de atención o consultorios, vinculando directamente las citas.
 - **Gestión de Veterinarios:**  
   - Información de contacto, especialidades y visualización de citas asociadas a cada veterinario.
+- **Gestión de Seguimientos:**  
+  - Gestión de seguimientos postoperatoriosde pacientes (mascotas)
 - **Interfaz de Usuario Mejorada:**  
   - Diseño moderno basado en tarjetas (cards) con efectos hover, sombras y bordes redondeados.
   - Diseño responsive para un uso óptimo en dispositivos móviles y de escritorio.
@@ -66,7 +68,6 @@ Se han realizado las siguientes mejoras y funcionalidades:
 
 2. **Integración de Assets:**
    - Se ha implementado un archivo CSS (`static/src/css/petguardian.css`) para dar un estilo moderno con animaciones sutiles.
-   - Se incluye un archivo opcional para plantillas QWeb (`static/src/xml/petguardian_templates.xml`) para futuras personalizaciones en el backend.
 
 3. **Traducciones:**
    - Se ha incluido un archivo `i18n/es.po` que traduce automáticamente las cadenas del módulo al español, facilitando su uso en entornos hispanohablantes.
@@ -144,6 +145,7 @@ petguardian/
     ├── templates.xml
     ├── vaccine_views.xml
     └── veterinarian_views.xml
+    └── followup_views.xml
 └── README.md
 
 
